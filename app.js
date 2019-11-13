@@ -30,6 +30,8 @@ if (isProduction) {
     mongoose.set('debug', true);
 }
 
+app.use(require('./routers'));
+
 // app.use(require('./routes'));
 /// catch 404 and forward to error handler
 app.use(function (req, res, next) {
